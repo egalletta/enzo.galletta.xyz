@@ -1,0 +1,42 @@
+[
+    {
+        "title": "enzo.galletta.xyz",
+        "purpose": "Personal Project",
+        "features": [
+            "Built using Bootstrap 4 and Flask",
+            "Hosted on Heroku"
+        ]
+        
+    },
+
+    {
+        "title": "Fossil Finder",
+        "purpose": "Cornerstone of Engineering Semester Project",
+        "features": [
+            "Created an interactive experience showcased at the Boston Children’s museum that challenged players to find and retrieve specific dinosaur fossils from a nearby ‘excavation site’",
+            "Utilized the Java-based Processing language and Arduino boards to drive a GUI, RFID scanner, and servo motors to validate and reward the retrieval of correct fossils"
+        ]
+        
+    },
+
+    {
+        "title": "Water Bottle Throwing Robot",
+        "purpose": "Embededed Design Project",
+        "features": [
+            "Programmed a robotic arm to accurately pick up and throw water bottles at targets",
+            "Designed a C++ program with the use of pthreads to control multiple servos simultaneously"
+        ]
+        
+    },
+
+    {
+        "title": "MBTA LED Map",
+        "purpose": "Bostonography Project",
+        "features": [
+            "Created a live-updating version of the MBTA full subway map that shows current vehicle positions through LED lights placed at each stop on the map",
+            "Wrote a Python script that parsed data from MBTA’s v3 API to communicate with Arduinos over aserial connection to light up the appropriate LEDs"
+        ]
+        
+    }
+    
+]

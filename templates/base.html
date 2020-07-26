@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>EG</title>
+    <script src="https://kit.fontawesome.com/bc93b17d21.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Container-->
+    <div class="container pt-5">
+        <!--ROW 1-->
+        <div class="row">
+            <div class="col-6 mb-3 text-left top-align-text">
+                <h1>Enzo Galletta</h1>
+                <h5 class="text-muted">Software Engineer | Boston, MA</h5>
+            </div>
+            <div class="col-6 mb-3 bottom-align-text d-md-none text-right">
+                <button class="btn btn-outline-secondary" data-toggle="collapse" href="#nav" role="button" aria-expanded="false" aria-controls="nav">
+                    <i class="fas fa-caret-down"></i>
+                </button>
+                <div id="nav" class="collapse list-group text-center pt-4 d-md-none">
+                    <a href="/" class="list-group-item list-group-item-action {{ 'active' if active_page == 'home' else '' }}"><i class="fas fa-home"></i> Home</a>
+                    <a href="/experience" class="list-group-item list-group-item-action {{ 'active' if active_page == 'experience' else '' }}"><i class="fas fa-lightbulb"></i></i> Experience</a>
+                    <a href="/academic" class="list-group-item list-group-item-action {{ 'active' if active_page == 'academic' else '' }}"><i class="fas fa-graduation-cap"></i> Academic</a>
+                    <a href="/projects" class="list-group-item list-group-item-action {{ 'active' if active_page == 'projects' else '' }}"><i class="fas fa-laptop-code"></i> Projects</a>
+                    <a href="http://www.github.com/egalletta" class="list-group-item list-group-item-action"><i class="fab fa-github"></i> GitHub <small><i class="fas fa-external-link-alt"></i></small></a>
+                    <a href="http://www.linkedin.com/in/egalletta" class="list-group-item list-group-item-action"><i class="fab fa-linkedin-in"></i> LinkedIn <small><i class="fas fa-external-link-alt"></i></small></a>
+                    <a href="/contact" class="list-group-item list-group-item-action"><i class="fas fa-address-book {{ 'active' if active_page == 'contact' else '' }}"></i> Contact</a>
+                </div>
+            </div>
+        </div>
+        <!--ROW 2-->
+        <div class="row pt-3">
+            <div class="col-md-3 mb-3 text-center">
+                <img src="{{ url_for('static', filename='enzo.jpg') }}" class="img-fluid img-thumbnail rounded-circle" alt="Responsive image">
+                <div class="list-group text-center pt-4 d-none d-md-block">
+                    <a href="/" class="list-group-item list-group-item-action {{ 'active' if active_page == 'home' else '' }}"><i class="fas fa-home"></i> Home</a>
+                    <a href="/experience" class="list-group-item list-group-item-action {{ 'active' if active_page == 'experience' else '' }}"><i class="fas fa-lightbulb"></i></i> Experience</a>
+                    <a href="/academic" class="list-group-item list-group-item-action {{ 'active' if active_page == 'academic' else '' }}"><i class="fas fa-graduation-cap"></i> Academic</a>
+                    <a href="/projects" class="list-group-item list-group-item-action {{ 'active' if active_page == 'projects' else '' }}"><i class="fas fa-laptop-code"></i> Projects</a>
+                    <a href="http://www.github.com/egalletta" class="list-group-item list-group-item-action"><i class="fab fa-github"></i> GitHub <small><i class="fas fa-external-link-alt"></i></small></a>
+                    <a href="http://www.linkedin.com/in/egalletta" class="list-group-item list-group-item-action"><i class="fab fa-linkedin-in"></i> LinkedIn <small><i class="fas fa-external-link-alt"></i></small></a>
+                    <a href="/contact" class="list-group-item list-group-item-action"><i class="fas fa-address-book {{ 'active' if active_page == 'contact' else '' }}"></i> Contact</a>
+                </div>
+            </div>
+            {%block content%}
+            {%endblock%}
+        </div>
+        <!--ROW 3-->
+        <div class="row d-none d-md-block">
+            <div class="col-md-3 mb-3 pl-1">
+                
+            </div>
+            <div class="col-md-9 mb-3">
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script></body>
+    </html>
+    

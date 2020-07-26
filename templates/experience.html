@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% set active_page = "experience" %}
+{% block content %}
+<div class="col-md-9 mb-3">
+    <h4 class="font-weight-bold mt-4 text-center">Work Experience</h4>
+    {% for job in jobs %}
+    <div class="card m-3">
+        
+        <div class="card-body">
+            <h5 class="card-title">{{ job.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ job.company }}</h6>
+            <h6 class="card-subtitle mb-2 text-muted">{{ job.dates }}</h6>
+            <ul class="list-group list-group-flush">
+                {% for bullet in job.tasks %}
+                <li class="list-group-item">• {{ bullet }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+    </div>
+    {% endfor %}
+
+{% endblock %}
