@@ -10,21 +10,17 @@
     },
 
     {
-        "title": "Fossil Finder",
-        "purpose": "Cornerstone of Engineering Semester Project",
-        "features": [
-            "Created an interactive experience showcased at the Boston Children’s museum that challenged players to find and retrieve specific dinosaur fossils from a nearby ‘excavation site’",
-            "Utilized the Java-based Processing language and Arduino boards to drive a GUI, RFID scanner, and servo motors to validate and reward the retrieval of correct fossils"
-        ]
-        
-    },
-
-    {
         "title": "Water Bottle Throwing Robot",
         "purpose": "Embededed Design Project",
         "features": [
             "Programmed a robotic arm to accurately pick up and throw water bottles at targets",
             "Designed a C++ program with the use of pthreads to control multiple servos simultaneously"
+        ],
+        "links": [
+            {
+                "title": "Youtube",
+                "link": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjnwNnG-_PqAhVih-AKHbRIAqkQwqsBMAB6BAgKEAQ&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dwwxuq080C3k&usg=AOvVaw2C0S1y1tO66uAfWL14KZ-3"
+            }
         ]
         
     },
@@ -35,6 +31,22 @@
         "features": [
             "Created a live-updating version of the MBTA full subway map that shows current vehicle positions through LED lights placed at each stop on the map",
             "Wrote a Python script that parsed data from MBTA’s v3 API to communicate with Arduinos over aserial connection to light up the appropriate LEDs"
+        ],
+        "links": [
+            {
+                "title": "GitHub",
+                "link": "https://github.com/egalletta/mbta-led-map"
+            }
+        ]
+        
+    },
+
+    {
+        "title": "Fossil Finder",
+        "purpose": "Cornerstone of Engineering Semester Project",
+        "features": [
+            "Created an interactive experience showcased at the Boston Children’s museum that challenged players to find and retrieve specific dinosaur fossils from a nearby ‘excavation site’",
+            "Utilized the Java-based Processing language and Arduino boards to drive a GUI, RFID scanner, and servo motors to validate and reward the retrieval of correct fossils"
         ]
         
     }

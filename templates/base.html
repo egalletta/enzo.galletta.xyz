@@ -17,6 +17,15 @@
             <div class="col-6 mb-3 text-left top-align-text">
                 <h1>Enzo Galletta</h1>
                 <h5 class="text-muted">Software Engineer | Boston, MA</h5>
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                <div class="alert alert-primary" role="alert">
+                    {% for message in messages %}
+                    {{ message }}
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% endwith %}
             </div>
             <div class="col-6 mb-3 bottom-align-text d-md-none text-right">
                 <button class="btn btn-outline-secondary" data-toggle="collapse" href="#nav" role="button" aria-expanded="false" aria-controls="nav">
@@ -29,7 +38,8 @@
                     <a href="/projects" class="list-group-item list-group-item-action {{ 'active' if active_page == 'projects' else '' }}"><i class="fas fa-laptop-code"></i> Projects</a>
                     <a href="http://www.github.com/egalletta" class="list-group-item list-group-item-action"><i class="fab fa-github"></i> GitHub <small><i class="fas fa-external-link-alt"></i></small></a>
                     <a href="http://www.linkedin.com/in/egalletta" class="list-group-item list-group-item-action"><i class="fab fa-linkedin-in"></i> LinkedIn <small><i class="fas fa-external-link-alt"></i></small></a>
-                    <a href="/contact" class="list-group-item list-group-item-action"><i class="fas fa-address-book {{ 'active' if active_page == 'contact' else '' }}"></i> Contact</a>
+                    <a href="/contact" class="list-group-item list-group-item-action {{ 'active' if active_page == 'contact' else '' }}"><i class="fas fa-address-book"></i> Contact</a>
+                    <a href="/3d" class="list-group-item list-group-item-action {{ 'active' if active_page == '3d' else '' }}"><i class="fas fa-cogs"></i> 3D Printing</a>
                 </div>
             </div>
         </div>
@@ -44,7 +54,8 @@
                     <a href="/projects" class="list-group-item list-group-item-action {{ 'active' if active_page == 'projects' else '' }}"><i class="fas fa-laptop-code"></i> Projects</a>
                     <a href="http://www.github.com/egalletta" class="list-group-item list-group-item-action"><i class="fab fa-github"></i> GitHub <small><i class="fas fa-external-link-alt"></i></small></a>
                     <a href="http://www.linkedin.com/in/egalletta" class="list-group-item list-group-item-action"><i class="fab fa-linkedin-in"></i> LinkedIn <small><i class="fas fa-external-link-alt"></i></small></a>
-                    <a href="/contact" class="list-group-item list-group-item-action"><i class="fas fa-address-book {{ 'active' if active_page == 'contact' else '' }}"></i> Contact</a>
+                    <a href="/contact" class="list-group-item list-group-item-action {{ 'active' if active_page == 'contact' else '' }}"><i class="fas fa-address-book"></i> Contact</a>
+                    <a href="/3d" class="list-group-item list-group-item-action {{ 'active' if active_page == '3d' else '' }}"><i class="fas fa-cogs"></i> 3D Printing</a>
                 </div>
             </div>
             {%block content%}
