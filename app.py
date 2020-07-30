@@ -25,3 +25,7 @@ def academic():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/3d')
+def contact():
+    return render_template('3d.html')
