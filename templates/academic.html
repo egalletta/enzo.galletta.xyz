@@ -2,10 +2,23 @@
 {% set active_page = 'academic' %}
 {% block content %}
 <div class="col-md-9 mb-3">
-    <h4 class="font-weight-bold mt-4 text-center">Academic Work</h4>
-    <div class="card m-3">
-        <div class="card-body">
-            <h5 class="card-title">Academic page under construction.</h5>
+    <h4 class="font-weight-bold mt-4 text-center">Courses</h4>
+    <div class="accordion" id="classAccordian">
+        {% for class in classes %}
+        <div class="card">
+          <div class="card-header" id="{{class.code}}">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{class.code}}" aria-expanded="true" aria-controls="{{class.code}}">
+                {{class.code}} - {{class.name}}
+              </button>
+            </h2>
+          </div>
+          <div id="{{class.code}}" class="collapse" aria-labelledby="{{class.code}}" data-parent="#classAccordian">
+            <div class="card-body">
+              {{class.description}}
+            </div>
+          </div>
         </div>
-    </div>
+        {% endfor %}
+      </div>
 {% endblock %}
