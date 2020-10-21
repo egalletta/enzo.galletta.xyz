@@ -1,0 +1,38 @@
+[
+    {
+        "subj": "CS",
+        "courseId": 3500
+    },
+    {
+        "subj": "CY",
+        "courseId": 2550
+    },
+    {
+        "subj": "EECE",
+        "courseId": 2160
+    },
+    {
+        "subj": "CS",
+        "courseId": 2800
+    },
+    {
+        "subj": "CS",
+        "courseId": 2510
+    },
+    {
+        "subj": "CS",
+        "courseId": 2500
+    },
+    {
+        "subj": "CS",
+        "courseId": 1800
+    },
+    {
+        "subj": "GE",
+        "courseId": 1502
+    },
+    {
+        "subj": "GE",
+        "courseId": 1501
+    }
+]
