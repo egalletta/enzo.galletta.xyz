@@ -1,5 +1,7 @@
+.env
 .venv
 .vscode
+docker-compose.yml
 __pycache__
 venv/pyvenv.cfg
 venv/Lib/site-packages/easy_install.py

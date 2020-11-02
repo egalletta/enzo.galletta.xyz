@@ -4,7 +4,30 @@
         "purpose": "Personal Project",
         "features": [
             "Built using Bootstrap 4 and Flask",
-            "Hosted on Heroku"
+            "Hosted on 12-core ARM Docker Swarm cluster"
+        ],
+        "links": [
+            {
+                "title": "Github",
+                "link": "https://github.com/egalletta/enzo.galletta.xyz"
+            }
+        ]
+        
+    },
+
+    {
+        "title": "nugget",
+        "purpose": "Personal Project",
+        "features": [
+            "Allows user to send a personalized message to a LCD display of a recipient.",
+            "ESP8266 w/ Micropython to drive a LCD display, Flask Backend self-hosted on 12-core ARM Docker Swarm cluster, MongoDB, Bootstrap Web UI ",
+            "Hosted on 12-core ARM Docker Swarm cluster"
+        ],
+        "links": [
+            {
+                "title": "Github",
+                "link": "https://github.com/egalletta/nugget"
+            }
         ]
         
     },
