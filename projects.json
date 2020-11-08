@@ -4,7 +4,7 @@
         "purpose": "Personal Project",
         "features": [
             "Built using Bootstrap 4 and Flask",
-            "Hosted on 12-core ARM Docker Swarm cluster"
+            "Self-hosted on 12-core Raspberry Pi Docker Swarm cluster"
         ],
         "links": [
             {
@@ -20,8 +20,8 @@
         "purpose": "Personal Project",
         "features": [
             "Allows user to send a personalized message to a LCD display of a recipient.",
-            "ESP8266 w/ Micropython to drive a LCD display, Flask Backend self-hosted on 12-core ARM Docker Swarm cluster, MongoDB, Bootstrap Web UI ",
-            "Hosted on 12-core ARM Docker Swarm cluster"
+            "ESP8266 w/ Micropython to drive a LCD display, Flask Backend, MongoDB, Bootstrap Web UI ",
+            "Self-hosted on 12-core Raspberry Pi Docker Swarm cluster"
         ],
         "links": [
             {
