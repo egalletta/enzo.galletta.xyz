@@ -1,12 +1,16 @@
 version: 2
 jobs:
   build:
+    machine:
+      image: ubuntu-2004:202010-01
     steps:
       - add_ssh_keys:
           fingerprints:
             - "50:23:12:3b:2d:05:c8:33:6b:c0:17:8e:be:e7:b4:78"
       - run: "ssh -p 99 egalletta@saturn.galletta.xyz /home/egalletta/circleci/build_image.sh"
   deploy:
+    machine:
+      image: ubuntu-2004:202010-01
     steps:
       - add_ssh_keys:
           fingerprints:
