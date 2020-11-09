@@ -1,13 +1,15 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: jdrouet/docker-with-buildx:stable
     steps:
-      - checkout
-      - setup_remote_docker:
-          version: "18.09.3"
-      - run: docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-      - run: docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
-      - run: |
-          docker buildx build --push --platform linux/arm64/v8,linux/amd64 --tag egalletta/personal-site:multiarch-latest .
+      - add_ssh_keys:
+          fingerprints:
+            - "50:23:12:3b:2d:05:c8:33:6b:c0:17:8e:be:e7:b4:78"
+      - run: "ssh -p 99 egalletta@saturn.galletta.xyz /home/egalletta/circleci/build_image.sh"
+  deploy:
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "50:23:12:3b:2d:05:c8:33:6b:c0:17:8e:be:e7:b4:78"
+      - run: "ssh -p 99 egalletta@saturn.galletta.xyz /home/egalletta/circleci/update_service.sh"
+      
