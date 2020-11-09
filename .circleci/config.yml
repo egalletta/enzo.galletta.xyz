@@ -16,4 +16,11 @@ jobs:
           fingerprints:
             - "a5:d1:ba:e7:d4:04:90:01:1c:c6:b6:39:f4:1e:e9:5a"
       - run: "ssh -p 99 egalletta@saturn.galletta.xyz /home/egalletta/circleci/update_service.sh"
-      
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
