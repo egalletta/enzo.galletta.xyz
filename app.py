@@ -1,7 +1,28 @@
+""" 
+    enzo.galletta.xyz - Personal Website
+    Copyright (C) 2020  Enzo E. Galletta
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>. 
+"""
+
 from flask import Flask, render_template, request, flash, redirect, url_for
 import json
 import smtplib, ssl
 import os
+
+from searchneu.api import get_course
+
 app = Flask(__name__)
 app.secret_key = os.environ.get('FLASK_SECRET')
 
@@ -28,7 +49,19 @@ def projects():
 
 @app.route('/academic')
 def academic():
-    return render_template('academic.html')
+    with open("academic.json",'r') as file:
+        academic_obj = json.load(file)
+    classes = []
+    for course in academic_obj:
+        course_obj = get_course(course['subj'], course['courseId'])
+        classes.append(
+            {
+                "name": course_obj['class']['latestOccurrence']['name'],
+                "code": (course['subj'] + str(course['courseId'])),
+                "description": course_obj['class']['latestOccurrence']['desc']
+            }
+        )
+    return render_template('academic.html', classes=classes)
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():

@@ -1,0 +1,22 @@
+version: "3.3"
+
+services:
+  enzo:
+    image: egalletta/personal-site:arm64
+    environment:
+      - EMAIL_PW=
+      - ENZO_EMAIL=
+      - FLASK_SECRET=
+      - SERVER_EMAIL=
+    networks:
+      - public
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.enzo.entrypoints=web-secured"
+        - "traefik.http.routers.enzo.rule=Host(`enzo.galletta.xyz`)"
+        - "traefik.http.routers.enzo.tls=true"
+        - "traefik.http.services.enzo.loadbalancer.server.port=80"
+networks:
+  public:
+    external: true

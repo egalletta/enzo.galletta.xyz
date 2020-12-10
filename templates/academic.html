@@ -3,19 +3,20 @@
 {% block content %}
 <div class="col-md-9 mb-3">
     <h4 class="font-weight-bold mt-4 text-center">Courses</h4>
-    <div class="accordion" id="classAccordian">
+    <div id="accordion">
         {% for class in classes %}
         <div class="card">
-          <div class="card-header" id="{{class.code}}">
-            <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{class.code}}" aria-expanded="true" aria-controls="{{class.code}}">
+          <div class="card-header" id="heading-{{class.code}}">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#{{class.code}}" aria-expanded="false" aria-controls="{{class.code}}">
                 {{class.code}} - {{class.name}}
               </button>
-            </h2>
+            </h5>
           </div>
-          <div id="{{class.code}}" class="collapse" aria-labelledby="{{class.code}}" data-parent="#classAccordian">
+      
+          <div id="{{class.code}}" class="collapse" aria-labelledby="{{class.code}}" data-parent="#accordion">
             <div class="card-body">
-              {{class.description}}
+                {{class.description}}
             </div>
           </div>
         </div>
