@@ -1,28 +1,38 @@
 [
-    {
-        "title": "IT Engineering Co-op",
-        "company": "ARIA Cybersecurity Solutions",
-        "dates": "Jun. 2020 - Present",
-        "tasks": [
-            "Configure Linux servers for both development test purposes and day-to-day business operations",
-            "Perform software integration testing on ARIA Cybersecurity products",
-            "Develop scripts to automate fileserver backups, ESXi VM management, and DHCP reservations of network devices"
-        ]
-        
-    },
+  {
+    "title": "Software Technical Lead",
+    "company": "Generate Product Development | BurnCam Medical",
+    "dates": "Dec 2020 - Present",
+    "tasks": [
+      "Lead team of six engineers to redesign and add new features to a multi-platform telemedicine application used to help treat burn victims",
+      "Use AWS serverless infrastructure to host BurnCam’s backend & database",
+      "Plan bi-weekly sprints, lead development meetings, review/merge code, and ensure team stays on schedule"
+    ]
+  },
 
-    {
-        "title": "Lead Customer Experience Technician",
-        "company": "Northeastern University Information Technology Services",
-        "dates": "Nov. 2019 - Jun. 2020",
-        "tasks": [
-            "Supervised, mentored, and assessed over 100 student employees performing IT Help Desk tasks",
-            "Met individually with student employees to discuss performance, raises, and promotions",
-            "Created a Spring Boot REST API to streamline annual ethernet and WiFi access point checks throughout Northeastern’s campus",
-            "Solved over 500 software, hardware, networking, printing, and account issues experienced by Northeastern students, faculty, and staff",
-            "Developed workflows and automations to improve efficiency using Microsoft Power Automate"
-        ]
-        
-    }
-    
+  {
+    "title": "IT Engineering Co-op",
+    "company": "ARIA Cybersecurity Solutions",
+    "dates": "Jun. 2020 - Jan. 2021",
+    "tasks": [
+      "Develop software integration tests on container-based applications in Python and Bash used in Jenkins CI Pipeline for ARIA Cybersecurity appliances and smart NICs",
+      "Administer bare-metal and virtual Linux (CentOS, Ubuntu) hosts with ESXi and KVM for software development/testing and daily business operations",
+      "Set up demo/test configurations of product deployments for different customer use cases (air-gapped, LAN, and WAN-placed components)",
+      "Created and tracked issues using Jira tickets"
+    ]
+  },
+
+  {
+    "title": "Lead Customer Experience Technician",
+    "company": "Northeastern University Information Technology Services",
+    "dates": "Nov. 2019 - Jun. 2020",
+    "tasks": [
+      "Supervised, mentored, and assessed over 100 student employees performing IT Help Desk tasks",
+      "Met individually with student employees to discuss performance, raises, and promotions",
+      "Created a Spring Boot REST API to streamline annual ethernet and WiFi access point checks throughout Northeastern’s campus",
+      "Solved over 500 software, hardware, networking, printing, and account issues experienced by Northeastern students, faculty, and staff",
+      "Developed workflows and automations to improve efficiency using Microsoft Power Automate"
+    ]
+  }
 ]
+
