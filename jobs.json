@@ -1,12 +1,19 @@
 [
+
   {
-    "title": "Software Technical Lead",
-    "company": "Generate Product Development | BurnCam Medical",
-    "dates": "Dec 2020 - Present",
+    "title": "Software  Engineering Co-Op",
+    "company": "MORSE Corp.",
+    "dates": "Beginning July 2021"
+  },
+
+  {
+    "title": "Network Technician",
+    "company": "Northeastern University Information Technology Services",
+    "dates": "Jan 2021 - Present",
     "tasks": [
-      "Lead team of six engineers to redesign and add new features to a multi-platform telemedicine application used to help treat burn victims",
-      "Use AWS serverless infrastructure to host BurnCam’s backend & database",
-      "Plan bi-weekly sprints, lead development meetings, review/merge code, and ensure team stays on schedule"
+        "Fulfilled customer requests for network changes by patching ethernet ports and configuring Juniper access switches and Aruba Wireless Access Points",
+        "Maintained inventory and configured backup equipment for use in emergency failures",
+        "Developed tools (with Python, Ansible) to automate repetitive tasks to increase team productivity and efficiency"
     ]
   },
 

@@ -39,14 +39,13 @@
                     <a href="http://www.github.com/egalletta" class="list-group-item list-group-item-action"><i class="fab fa-github"></i> GitHub <small><i class="fas fa-external-link-alt"></i></small></a>
                     <a href="http://www.linkedin.com/in/egalletta" class="list-group-item list-group-item-action"><i class="fab fa-linkedin-in"></i> LinkedIn <small><i class="fas fa-external-link-alt"></i></small></a>
                     <a href="/contact" class="list-group-item list-group-item-action {{ 'active' if active_page == 'contact' else '' }}"><i class="fas fa-address-book"></i> Contact</a>
-                    <a href="/3d" class="list-group-item list-group-item-action {{ 'active' if active_page == '3d' else '' }}"><i class="fas fa-cogs"></i> 3D Printing</a>
                 </div>
             </div>
         </div>
         <!--ROW 2-->
         <div class="row pt-3">
-            <div class="col-md-3 mb-3 text-center">
-                <img src="{{ url_for('static', filename='enzo.jpg') }}" class="img-fluid img-thumbnail rounded-circle" alt="Responsive image">
+            <div class="col-md-3 mb-3 text-center" style="position: sticky; top: 0;">
+                <img src="{{ url_for('static', filename='enzo.jpg') }}" class="img-fluid img-thumbnail rounded-circle" alt="Responsive image" style=>
                 <div class="list-group text-center pt-4 d-none d-md-block">
                     <a href="/" class="list-group-item list-group-item-action {{ 'active' if active_page == 'home' else '' }}"><i class="fas fa-home"></i> Home</a>
                     <a href="/experience" class="list-group-item list-group-item-action {{ 'active' if active_page == 'experience' else '' }}"><i class="fas fa-lightbulb"></i></i> Experience</a>
@@ -55,7 +54,6 @@
                     <a href="http://www.github.com/egalletta" class="list-group-item list-group-item-action"><i class="fab fa-github"></i> GitHub <small><i class="fas fa-external-link-alt"></i></small></a>
                     <a href="http://www.linkedin.com/in/egalletta" class="list-group-item list-group-item-action"><i class="fab fa-linkedin-in"></i> LinkedIn <small><i class="fas fa-external-link-alt"></i></small></a>
                     <a href="/contact" class="list-group-item list-group-item-action {{ 'active' if active_page == 'contact' else '' }}"><i class="fas fa-address-book"></i> Contact</a>
-                    <a href="/3d" class="list-group-item list-group-item-action {{ 'active' if active_page == '3d' else '' }}"><i class="fas fa-cogs"></i> 3D Printing</a>
                 </div>
             </div>
             {%block content%}
